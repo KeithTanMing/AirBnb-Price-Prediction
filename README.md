@@ -12,19 +12,22 @@ From a homeownder's perspective, deciding on a suitable price for a listing is a
 __Problem Statement:__ 
 <br> Using New York as a case study, I would like to predict the daily price of listings, and in so doing, understand the factors that have significance influence on the price (e.g. location, quality of host)
 
-## 2. Summary of Key Findings & Results
-
+__Approach:__
 A year's worth of data (i.e. listings, reviews, calendar availability) was extracted from Inside Airbnb, an independent, non-commercial set of tools and data to explore how Airbnb is utilized in cities around the world. The data is then cleaned, analyzed, processed and ran through several machine learning models (e.g. Elastic Net, Random Forest Regressor, XGBoostRegressor).
 
-The model that performed the best came from __XGBoostRegressor__, at a regression prediction accuracy rate of __~80%__, and Root Mean Squared Error of __$2.08__. 
+## 2. Summary of Key Findings & Results
+
+A total of 9 models were established. The best performing model came from __XGBoostRegressor__, at a regression prediction accuracy rate of __~80%__, and Root Mean Squared Error of __$2.08__.
 
 ![GridSearch](/Asset/Model_Gridsearch.png)
 
-In descending order, the top 5 statistically significant features in predicting daily price are 'occupancy size', 'neighbourhood', 'cleaning fee', 'number of bedrooms' and 'minimum nights'.
+In descending order, the top 5 statistically significant features in predicting daily price are __'Occupancy Size'__, __'Neighbourhood'__, __'Cleaning Fee'__, __'Number of Bedrooms'__ and __'Minimum Nights'__.
+
+While features such as occupancy size, neighbourhood and number of bedrooms are expected features, 'Cleaning Fee' came as a surprise. It is possible that cleaning fee is seen as an additional cost variable that is [Loss Aversion](https://corporatefinanceinstitute.com/resources/knowledge/trading-investing/loss-aversion/)
 
 ![FeatureImpt](/Asset/Feature_impt.png)
 
-For further improvements, the model can be further improved by:
-- Accounting for seasonality in price;
+For further iterations, the model can be further improved by:
 - Using PolynomialFeatures to explore interactions of features
 - Translating non-english reviews to account for more accurate polarity scores
+- Testing the robustness of the model on different geographical regions
