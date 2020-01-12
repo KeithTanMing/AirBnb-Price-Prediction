@@ -21,7 +21,7 @@ A total of 9 models were established. The best performing model came from __XGBo
 
 ![GridSearch](/Asset/Model_Gridsearch.png)
 
-In descending order, the top 5 statistically significant features in predicting daily price are __'Occupancy Size'__, __'Neighbourhood'__, __'Cleaning Fee'__, __'Number of Bedrooms'__ and __'Minimum Nights'__. The surprising statistical strength of 'Cleaning Fee' as a feature, can be explained by the cognitive psychology and decision theory of Loss Aversion](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/) - a high cleaning fee will cause potential rentees to reconsider a listing, even if it is an ideal one, driving the listing price down.
+In descending order, the top 5 statistically significant features in predicting daily price are __'Occupancy Size'__, __'Neighbourhood'__, __'Cleaning Fee'__, __'Number of Bedrooms'__ and __'Minimum Nights'__. The surprising statistical strength of 'Cleaning Fee' as a feature, can be explained by the cognitive psychology and decision theory of [Loss Aversion](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/) - a high cleaning fee will cause potential rentees to reconsider a listing, even if it is an ideal one, driving the listing price down.
 
 ![FeatureImpt](/Asset/Feature_impt.png)
 
