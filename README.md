@@ -18,6 +18,8 @@ A year's worth of data (i.e. listings, reviews, calendar availability) was extra
 
 The model that performed the best came from __XGBoostRegressor__, at a regression prediction accuracy rate of __~80%__, and Root Mean Squared Error of __$2.08__. 
 
+![GridSearch](../Assets/Model_Gridsearch.png)
+
 In descending order, the top 5 statistically significant features in predicting daily price are 'occupancy size', 'neighbourhood', 'cleaning fee', 'number of bedrooms' and 'minimum nights'.
 
 For further improvements, the model can be further improved by:
