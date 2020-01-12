@@ -1,7 +1,7 @@
 # AirBnb-Price-Prediction
 
 #### Refer to 'EDA & Modelling' notebook for data cleaning, analysis and modelling
-#### Refer to 'Data Scrapping' notebook for data aquired from: http://insideairbnb.com/get-the-data.html
+#### Refer to 'Data Scrapping' notebook for data aquired from InsideAirBnb
 
 ## 1. Introduction
 
@@ -12,11 +12,11 @@ From a homeownder's perspective, deciding on a suitable price for a listing is a
 __Problem Statement:__ 
 <br> Using New York as a case study, I would like to predict the daily price of listings, and in so doing, understand the factors that have significance influence on the price (e.g. location, quality of host)
 
-## 2. Executive Summary
+## 2. Summary of Key Findings & Results
 
-A year's worth of data (i.e. listings, reviews, calendar availability) is extracted from Inside Airbnb, an independent, non-commercial set of tools and data to explore how Airbnb is utilized in cities around the world. The data is then cleaned, analyzed, processed and ran through several regression models (e.g. Elastic Net, Random Forest Regressor, XGBoostRegressor).
+A year's worth of data (i.e. listings, reviews, calendar availability) was extracted from Inside Airbnb, an independent, non-commercial set of tools and data to explore how Airbnb is utilized in cities around the world. The data is then cleaned, analyzed, processed and ran through several machine learning models (e.g. Elastic Net, Random Forest Regressor, XGBoostRegressor).
 
-The model that performed the best came from a __XGBoostRegressor__, at a regression prediction accuracy rate of __78%__, and Root Mean Squared Error of __$2.08__. 
+The model that performed the best came from __XGBoostRegressor__, at a regression prediction accuracy rate of __~80%__, and Root Mean Squared Error of __$2.08__. 
 
 In descending order, the top 5 statistically significant features in predicting daily price are 'occupancy size', 'neighbourhood', 'cleaning fee', 'number of bedrooms' and 'minimum nights'.
 
