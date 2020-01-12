@@ -22,6 +22,8 @@ The model that performed the best came from __XGBoostRegressor__, at a regressio
 
 In descending order, the top 5 statistically significant features in predicting daily price are 'occupancy size', 'neighbourhood', 'cleaning fee', 'number of bedrooms' and 'minimum nights'.
 
+![FeatureImpt](/Asset/Feature_impt.png)
+
 For further improvements, the model can be further improved by:
 - Accounting for seasonality in price;
 - Using PolynomialFeatures to explore interactions of features
